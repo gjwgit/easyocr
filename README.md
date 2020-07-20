@@ -50,6 +50,7 @@ The output format per line is: <certainty>,<bounding box>,<text>
 The *ocr* command performs the character recognition.
 
 ![](https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg)
+Latin script like English is supprted by default (option is `-l en`):
 ```console
 $ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
 0.96,323 276 1326 276 1326 628 323 628,ABBEY
@@ -60,6 +61,7 @@ $ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_a
 ```
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png/220px-SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png)
+Thai is supported (option is `-l th en`):
 ```console
 $ ml ocr easyocr https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png/220px-SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png -l th en
 0.0,47 9 179 9 179 49 47 49,ทมข้แพพ้กทร็์
@@ -71,7 +73,7 @@ $ ml ocr easyocr https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/SIM_C
 ```
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Toronto_-_ON_-_Cecil_Street.jpg/1200px-Toronto_-_ON_-_Cecil_Street.jpg)
-Identify both Simplified Chinese and English (option is `-l ch_cim en`):
+Identify both Simplified Chinese and English (option is `-l ch_sim en`):
 ```console
 $ ml ocr easyocr https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Toronto_-_ON_-_Cecil_Street.jpg/1200px-Toronto_-_ON_-_Cecil_Street.jpg -l ch_sim en
 CUDA not available - defaulting to CPU. Note: This module is much faster with a GPU.
