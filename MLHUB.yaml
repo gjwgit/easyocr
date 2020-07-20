@@ -1,0 +1,21 @@
+--- # Easy OCR
+meta:
+  name         : easyocr
+  title        : Extract text from images.
+  keywords     : computer vision, ocr, image to text
+  version      : 0.0.1
+  languages    : py
+  display      : demo
+  license      : gplv3
+  author       : Graham.Williams@togaware.com
+  url          : https://github.com/gjwgit/easyocr
+dependencies:
+  pip3:
+    - easyocr
+  files:
+    - README.md
+    - ocr.py
+    - https://www.jaided.ai/read_download/craft_mlt_25k.pth cache/model/
+    - https://www.jaided.ai/read_download/chinese_sim.pth cache/model/
+commands:
+  ocr : Extract text from image.
