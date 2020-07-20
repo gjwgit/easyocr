@@ -43,7 +43,7 @@ The output format per line is: <certainty>,<bounding box>,<text>
 
 ## Demonstrations
 
-![](https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
+![](https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg)
 ```console
 $ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
 0.96,323 276 1326 276 1326 628 323 628,ABBEY
