@@ -14,7 +14,7 @@ This MLHub package source code is available from
 ## Quick Start
 
 ```console
-$ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
+$ ml ocr easyocr https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png/220px-SIM_CAVE_PHU_MAK_PRIK_PHU_HIN_PUN.png -l th en
 ```
 
 ## Usage
