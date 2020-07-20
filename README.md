@@ -1,16 +1,47 @@
-# easyocr
+# Recognising Text in Images Using EasyOCR
 
-https://github.com/JaidedAI/EasyOCR
+This [MLHub](https://mlhub.ai) package uses the EasyOCR package for
+Python, available through PyPI, to perform optical character
+recognition (OCR) from images.
+
+The EasyOCR pacakge is available from
+<https://github.com/JaidedAI/EasyOCR>.
+
+This MLHub package source code is available from
+<https://github.com/gjwgit/easyocr>.
+
+
+## Quick Start
 
 ```console
-$ ml ocr easyocr <path> [-l <lang> ...]
+$ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
 ```
+
+## Usage
+
+- To install mlhub (Ubuntu):
+
+		$ pip3 install mlhub
+		$ ml configure
+
+- To install, configure, and run the demo:
+
+		$ ml install   easyocr
+		$ ml configure easyocr
+		$ ml readme    easyocr
+		$ ml commands  easyocr
+		$ ml demo      easyocr
+		
+- Command line tools:
+
+	    $ ml ocr easyocr <path>  [-l <lang> ...]
 
 Languages supported include: 
 en (default), ch_sim, th, 
 
-Output: certainty,boundingbox,text
+The output format per line is: <certainty>,<bounding box>,<text>
 
+## Demonstrations
 
 ![](https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg
 ```console
