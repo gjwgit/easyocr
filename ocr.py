@@ -1,17 +1,21 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Monday 2020-07-20 15:29:36 AEST Graham Williams>
+# Time-stamp: <Monday 2020-07-20 15:39:07 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the GPLv3
 #
 # A command line to extract text from an image.
 #
-# ml ocr easyocr <path>
+# ml ocr easyocr <path> [-l <lang> ...]
+
+# Use the cached models.
+
+import os
+os.environ["MODULE_PATH"] = "cache"
 
 # Import the required libraries.
 
-import os
 import re
 import sys
 import easyocr
@@ -49,10 +53,10 @@ lang = args.lang if args.lang else ['en']
 # Avoid the stderr message:
 # CUDA not available - defaulting to CPU. Note: This module is much faster with a GPU.
 
-stderr  = sys.stderr
-sys.stderr = open(os.devnull, 'w')
+#stderr  = sys.stderr
+#sys.stderr = open(os.devnull, 'w')
 reader= easyocr.Reader(lang_list=lang)
-sys.stderr = stderr
+#sys.stderr = stderr
 
 if is_url(path):
     request = requests.get(path)
