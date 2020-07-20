@@ -36,12 +36,18 @@ $ ml ocr easyocr https://sharpie51.files.wordpress.com/2010/02/street_sign_for_a
 
 	    $ ml ocr easyocr <path>  [-l <lang> ...]
 
+The path can be a local image file or a URL to an image file.
+
 Languages supported include: 
 en (default), ch_sim, th, 
 
 The output format per line is: <certainty>,<bounding box>,<text>
 
-## Demonstrations
+## Command Line Tools
+
+**ocr**
+
+The *ocr* command performs the character recognition.
 
 ![](https://sharpie51.files.wordpress.com/2010/02/street_sign_for_abbey_road_in_westminster_london_england_img_1461.jpg)
 ```console
