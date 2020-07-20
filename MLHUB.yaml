@@ -3,7 +3,7 @@ meta:
   name         : easyocr
   title        : Extract text from images.
   keywords     : computer vision, ocr, image to text
-  version      : 0.0.4
+  version      : 0.0.5
   languages    : py
   display      : demo
   license      : gplv3
@@ -20,6 +20,9 @@ dependencies:
     - README.md
     - demo.py
     - ocr.py
+    - https://www.jaided.ai/read_download/craft_mlt_25k.pth: cache/model/
+    - https://www.jaided.ai/read_download/latin.pth: cache/model/
+    - https://www.jaided.ai/read_download/chinese_sim.pth: cache/model
 commands:
   demo : Demonstrate character recognition from images.
   ocr  : Extract text from image.
