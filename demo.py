@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Time-stamp: <Monday 2020-07-20 16:25:27 AEST Graham Williams>
+# Time-stamp: <Monday 2020-07-20 16:31:54 AEST Graham Williams>
 #
 # Copyright (c) Togaware Pty Ltd. All rights reserved.
 # Licensed under the GPLv3
@@ -24,7 +24,10 @@ This is a very simple demo of EasyOCR from Jaided.ai.
 This demo will read an image from Wikipedia and recognise the text
 in Simplified Chinese and English. Text in both languages is detected.
 
-A window will pop up shortly to display the image.
+For the first run of the demo the models will be downloaded. This can
+take a minute or two, depending on your Internet connection.
+
+A window will then pop up to display the image.
 
 When requested you can press Enter to continue to the analysis without
 closing the image (making sure the console has focus rather than the image).
