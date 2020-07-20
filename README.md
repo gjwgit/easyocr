@@ -33,3 +33,14 @@ $ ml ocr easyocr https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/SIM_C
 0.11,67 191 159 191 159 207 67 207,phu hin pun
 ```
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Toronto_-_ON_-_Cecil_Street.jpg/1200px-Toronto_-_ON_-_Cecil_Street.jpg)
+Identify both Simplified Chinese and English (option is `-l ch_cim en`):
+```console
+python3 ocr.py https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Toronto_-_ON_-_Cecil_Street.jpg/1200px-Toronto_-_ON_-_Cecil_Street.jpg -l ch_sim en
+CUDA not available - defaulting to CPU. Note: This module is much faster with a GPU.
+0.86,294 173 653 173 653 313 294 313,CECIL
+0.79,748 174 916 174 916 308 748 308,ST.
+0.97,765 309 935 309 935 447 765 447,街
+0.18,283 317 723 317 723 453 283 453,施 素
+0.51,563 469 653 469 653 529 563 529,60
+```
