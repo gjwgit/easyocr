@@ -3,13 +3,16 @@ meta:
   name         : easyocr
   title        : Extract text from images.
   keywords     : computer vision, ocr, image to text
-  version      : 0.0.2
+  version      : 0.0.3
   languages    : py
   display      : demo
   license      : gplv3
   author       : Graham.Williams@togaware.com
   url          : https://github.com/gjwgit/easyocr
 dependencies:
+  python3:
+    - scipy
+    - numpy
   pip3:
     - easyocr
   files:
