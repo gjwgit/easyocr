@@ -15,7 +15,5 @@ dependencies:
   files:
     - README.md
     - ocr.py
-    - https://www.jaided.ai/read_download/craft_mlt_25k.pth cache/model/
-    - https://www.jaided.ai/read_download/chinese_sim.pth cache/model/
 commands:
   ocr : Extract text from image.
