@@ -14,6 +14,8 @@ dependencies:
     - easyocr
   files:
     - README.md
+    - demo.py
     - ocr.py
 commands:
-  ocr : Extract text from image.
+  demo : Demonstrate character recognition from images.
+  ocr  : Extract text from image.
